@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">Chocolate Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us research chocolate brand interest</p>
+    <form id="survey-form">
+      <fieldset>
+        <legend>Personal Details</legend>
+
+        <label for="name" id="name-label">Name</label>
+        <input required id="name" type="text" placeholder="John Doe"/>
+
+        <label for="email" id="email-label">Email</label>
+        <input required id="email" type="email" placeholder="example@email.com"/>
+
+        <label for="number" id="number-label">Age</label>
+        <input id="number" type="number" min="13" max="100" placeholder="13"/>
+      </fieldset>
+
+      <fieldset>
+        <legend>Favourite Chocolate Flavour?</legend>
+        <label for="flavour" id="flavour-label">Milk Chocolate</label>
+        <input type="radio" name="flavour" value="milk-chocolate"/>
+
+        <label for="flavour" id="flavour-label">Dark Chocolate</label>
+        <input type="radio" name="flavour" value="dark-chocolate"/>
+      </fieldset>
+
+      <fieldset>
+        <legend>Favourite Chocolate Brand?</legend>
+        <select id="dropdown">
+          <option type="radio" name="chocolate-brand" value="cadbury">Cadbury</option>
+          <option type="radio" name="chocolate-brand" value="maltesers">Maltesers</option>
+          <option type="radio" name="chocolate-brand" value="galaxy">Galaxy</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Best way to eat/drink Chocolate?</legend>
+
+        <label for="chocolate-cake">Chocolate Cake</label>
+        <input type="checkbox" name="chocolate-cake" value="chocolate-cake"/>
+
+        <label for="chocolate-bar">Chocolate Bar</label>
+        <input type="checkbox" name="chocolate-bar" value="chocolate-bar"/>
+
+        <label for="chocolate-cake">Chocolate Milk</label>
+        <input type="checkbox" name="chocolate-milk" value="chocolate-milk"/>
+
+      </fieldset>
+
+      <legend>Any extra comments?<legend>
+      <textarea></textarea>
+
+      <button id="submit" type="submit">Submit</button>
+
+    </form> 
+  </body>
+</html>
