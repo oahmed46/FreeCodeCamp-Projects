@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Checkout Page</title>
+</head>
+
+<body>
+    <h1>Checkout</h1>
+    <section>
+        <h2>Your Cart</h2>
+        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fsteamcdn-a.akamaihd.net%2Fsteam%2Fapps%2F1237320%2Fheader.jpg&f=1&nofb=1&ipt=c59aebb56ed1e9162c473653e7bb0c2f98895dd500dc41d82b423b1e4860f9ba" alt="Sonic Frontiers">
+    </section>
+    <section>
+        <h2>Payment Information</h2>
+        <form>
+            <div>
+                <label for="card-name">Cardholder Name<span aria-hidden="true">*</span></label>
+                <input required id="card-name" name="card-name" type="text">
+            </div>
+
+            <div>
+                <label for="card-number">Card Number<span aria-hidden="true">*</span></label>
+                <input required id="card-number" name="card-number" type="text" aria-describedby="card-number-help">
+                <p id="card-number-help">Please enter your 16-digit card number without spaces or dashes.</p>
+            </div>
+
+             <div>
+                <label for="expiry-date">Expiry Date<span aria-hidden="true">*</span></label>
+                <input required id="expiry-date" name="expiry-date" type="text" placeholder="MM/YY">
+            </div>
+
+            <div>
+                <label for="cvv">CVV<span aria-hidden="true">*</span></label>
+                <input required id="cvv" name="cvv" type="text" aria-describedby="card-number-help">
+            </div>
+
+            <div>
+                <button type="submit">Place Order</button>
+            </div>
+            
+        </form>
+    </section>
+
+</body>
+
+</html>
